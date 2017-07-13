@@ -62,8 +62,11 @@ Pronto, temos a projeto basico rodando.
 **Resultado**:
 
 Content-Type: application/json;charset=UTF-8
+
 Transfer-Encoding: chunked
+
 Date: Thu, 13 Jul 2017 02:59:21 GMT
+
 [{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":2,"nome":"Posto","coordenadaX":31,"coordenadaY":18},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":4,"nome":"Floricultura","coordenadaX":19,"coordenadaY":21},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6},{"id":7,"nome":"Churrascaria","coordenadaX":28,"coordenadaY":2}]
 
 2) Retorna a lista com todos os pontos de interesse por proximidade
@@ -75,8 +78,11 @@ Date: Thu, 13 Jul 2017 02:59:21 GMT
 **Resultado**
 
 Content-Type: application/json;charset=UTF-8
+
 Transfer-Encoding: chunked
+
 Date: Thu, 13 Jul 2017 03:01:15 GMT
+
 [{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6}]
 
 3) Inserir novo ponto de interesse
@@ -96,7 +102,10 @@ Date: Thu, 13 Jul 2017 03:01:15 GMT
 **Resultado**
 
 Content-Type: application/json;charset=UTF-8
+
 Transfer-Encoding: chunked
+
 Date: Thu, 13 Jul 2017 03:02:40 GMT
+
 {"id":8,"nome":"Casa do Cesar","coordenadaX":35,"coordenadaY":15}
 
