@@ -53,7 +53,7 @@ Pronto, temos a projeto basico rodando.
 
 ## Instruções para teste ##
 
-1) Retorna a lista com todos os pontos de interesse cadastrados
+**Serviço 1:**  Retorna a lista com todos os pontos de interesse cadastrados
 
 **URL:** /pontos-interesse
 
@@ -61,15 +61,12 @@ Pronto, temos a projeto basico rodando.
 
 **Resultado**:
 
-Content-Type: application/json;charset=UTF-8
+    Content-Type: application/json;charset=UTF-8
+    Transfer-Encoding: chunked
+    Date: Thu, 13 Jul 2017 02:59:21 GMT
+    [{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":2,"nome":"Posto","coordenadaX":31,"coordenadaY":18},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":4,"nome":"Floricultura","coordenadaX":19,"coordenadaY":21},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6},{"id":7,"nome":"Churrascaria","coordenadaX":28,"coordenadaY":2}]
 
-Transfer-Encoding: chunked
-
-Date: Thu, 13 Jul 2017 02:59:21 GMT
-
-[{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":2,"nome":"Posto","coordenadaX":31,"coordenadaY":18},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":4,"nome":"Floricultura","coordenadaX":19,"coordenadaY":21},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6},{"id":7,"nome":"Churrascaria","coordenadaX":28,"coordenadaY":2}]
-
-2) Retorna a lista com todos os pontos de interesse por proximidade
+**Serviço 2:** Retorna a lista com todos os pontos de interesse por proximidade
 
 **URL:** /pontos-interesse/{coordenadaX}/{coordenadaY}/{distancia}
 
@@ -77,15 +74,12 @@ Date: Thu, 13 Jul 2017 02:59:21 GMT
 
 **Resultado**
 
-Content-Type: application/json;charset=UTF-8
+    Content-Type: application/json;charset=UTF-8
+    Transfer-Encoding: chunked
+    Date: Thu, 13 Jul 2017 03:01:15 GMT
+    [{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6}]
 
-Transfer-Encoding: chunked
-
-Date: Thu, 13 Jul 2017 03:01:15 GMT
-
-[{"id":1,"nome":"Lanchonete","coordenadaX":27,"coordenadaY":12},{"id":3,"nome":"Joalheria","coordenadaX":15,"coordenadaY":12},{"id":5,"nome":"Pub","coordenadaX":12,"coordenadaY":8},{"id":6,"nome":"Supermercado","coordenadaX":23,"coordenadaY":6}]
-
-3) Inserir novo ponto de interesse
+**Serviço 3:** Inserir novo ponto de interesse
 
 **URL:** /pontos-interesse
 
@@ -101,11 +95,8 @@ Date: Thu, 13 Jul 2017 03:01:15 GMT
 	
 **Resultado**
 
-Content-Type: application/json;charset=UTF-8
-
-Transfer-Encoding: chunked
-
-Date: Thu, 13 Jul 2017 03:02:40 GMT
-
-{"id":8,"nome":"Casa do Cesar","coordenadaX":35,"coordenadaY":15}
+    Content-Type: application/json;charset=UTF-8
+    Transfer-Encoding: chunked
+    Date: Thu, 13 Jul 2017 03:02:40 GMT
+    {"id":8,"nome":"Casa do Cesar","coordenadaX":35,"coordenadaY":15}
 
