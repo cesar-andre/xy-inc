@@ -55,7 +55,9 @@ Pronto, temos a projeto basico rodando.
 
 1) Retorna a lista com todos os pontos de interesse cadastrados
 **URL:** /pontos-interesse
+
 **Metodo:** GET
+
 **Resultado**:
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
@@ -64,8 +66,10 @@ Date: Thu, 13 Jul 2017 02:59:21 GMT
 
 2) Retorna a lista com todos os pontos de interesse por proximidade
 **URL:** /pontos-interesse/{coordenadaX}/{coordenadaY}/{distancia}
+
 **Metodo:** GET
- **Resultado**
+
+**Resultado**
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Date: Thu, 13 Jul 2017 03:01:15 GMT
@@ -73,7 +77,9 @@ Date: Thu, 13 Jul 2017 03:01:15 GMT
 
 3) Inserir novo ponto de interesse
 **URL:** /pontos-interesse
+
 **Metodo:** POST
+
 **Body:**
 
     {
@@ -81,6 +87,7 @@ Date: Thu, 13 Jul 2017 03:01:15 GMT
 		"coordenadaX": 35,
 		"coordenadaY": 15
 	}
+	
 **Resultado**
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
